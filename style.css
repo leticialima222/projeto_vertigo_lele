@@ -95,7 +95,7 @@ main {
     padding: 1rem;
     width: 100%;
     background: var(--purple);
-    
+
     font-size: 1rem;
     font-weight: 700;
     color: var(--white);
@@ -109,4 +109,20 @@ main {
 .login > p a {
     font-weight: 700;
     font-size: 1rem;
+}
+
+@media(min-width:1000px){
+    header {
+        background: none;
+        justify-content: flex-start;
+        padding-inline: 7rem;
+    }
+
+    header img {
+        width: 10rem;
+    }
+
+    main {
+        padding-inline: 7rem;
+    }
 }
