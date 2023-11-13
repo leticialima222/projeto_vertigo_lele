@@ -8,6 +8,8 @@
 :root {
     --grey-800: #1E293B; 
     --grey-600: #475569;
+    --grey-400: #94a3b8;
+    --grey-200: #e2e8f0;
     --purple: #7c3aed;
 }
 
@@ -44,12 +46,28 @@ main {
 .input-box {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .input-box div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-weight: 600;
+}
+
+.login input {
+    padding: 1rem 0.75rem;
+    border:  1px solif var(--grey-200);
+    border-radius: 0.25rem;
+    color: var(--grey-800);
+}
+
+.login input::placeholder {
+    color: var(--grey-400);
+}
+
+.login input:hover,
+.login input:focus {
+    outline: 1px solid var(--purple);
 }
 
 
@@ -66,6 +84,8 @@ main {
     font-weight: 600;
 }
 
-.login a:hover {
-    text-decoration: underline;
+.login a {
+    color: var(--purple);
+    text-decoration: none;
+
 }
